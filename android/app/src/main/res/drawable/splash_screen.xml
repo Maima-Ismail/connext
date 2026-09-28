@@ -2,11 +2,11 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- Background color -->
     <item android:drawable="@color/splash_background"/>
-    
-    <!-- Logo centered -->
-    <item>
-        <bitmap
-            android:gravity="center"
-            android:src="@drawable/splash_logo"/>
-    </item>
+
+    <!-- Logo centered. The PNG has padding, so 148dp renders the mark ~88dp tall to match the JS SplashView -->
+    <item
+        android:width="148dp"
+        android:height="148dp"
+        android:gravity="center"
+        android:drawable="@drawable/splash_logo"/>
 </layer-list>
